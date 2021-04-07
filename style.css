@@ -1,0 +1,52 @@
+html {
+    background-color: rgb(193, 209, 223);
+}
+body {
+    background-color: white;
+    color:#3d3c31;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1em;
+    border: 1px solid gray;
+    border-radius: 1em;
+    box-shadow: 0.3em 0.3em 0.5em gray;
+}
+header {
+    background-image: url(./images/southrim-compressed.jpg);
+    height: 300px;
+    background-size: 100%;
+    background-position-y: 55%;
+    color: white;
+    position: relative;
+    text-align: center;
+    border-radius: 1em 1em 0 0;
+}
+header h1 {
+    margin: 0em;
+    padding-top: 2.2em;
+    font-size: 3em;
+    mix-blend-mode:screen;
+    color: #99907a;
+}
+main {
+    margin: 1em;
+}
+a {
+    color:#5e6b8f;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+}
+.animate-pop-in {
+    animation: pop-in .6s ease-out forwards;
+}
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
